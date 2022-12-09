@@ -10,19 +10,19 @@ white: #fff
 black: #000  
 */
 
-html {
-    /* if we add any padding or border onto an element it does not affect the width of the 
-    element */
+html { 
+    /* If we add any padding or border onto an element it does not affect he width of the element */
     box-sizing: border-box;
 }
-Body {
+
+body {
     margin: 0;
     padding: 0;
-    font-family: 'opensans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     background-color: #200439;
-    color: #fff
-}
+    color: #fff;
+} 
 
 .hero {
     display: flex;
@@ -32,10 +32,10 @@ Body {
 }
 
 .heroImage {
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
-.heroimage img {
+.heroImage img {
     border-radius: 6rem;
     box-shadow: 10px 10px #000;
     width: 100%;
@@ -50,8 +50,8 @@ Body {
 }
 
 .heroName {
-    color:#c5b358;
-    font-size2.5rem;
+    color: #c5b358;
+    font-size: 2.5rem;
     text-transform: uppercase;
 }
 
@@ -59,7 +59,7 @@ Body {
     padding: 1rem;
 }
 
-.heroTextBottom {
+.heroTextBottom{
     padding: 1rem;
 }
 
@@ -67,37 +67,36 @@ Body {
     margin: 2rem;
 }
 
-.button { 
+.button {
     background-color: #fff;
     padding: 1rem;
     border: 1px solid #9277AC;
     border-radius: 25px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #200439;
     text-decoration: none;
     box-shadow: 8px 8px 4px #000;
 }
 
-.button:hover { 
+.button:hover {
     background-color: #361356;
     color: #c5b358;
     transform: scale(1.5);
-    /* (150% zoom - note: if the zoom is too large, it will go outside of the viewport) */
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-
-.projectsHeader {
-    margin:1.5rem 3rem;
+.projectsHeader{
+    margin: 1.5rem 3rem;
     text-align: center;
     padding: 0.5rem;
     letter-spacing: 4px;
 }
 
-.projectCard{ 
+.projectCard{
     background-color: #fff;
-    color:#200439;
-    margin:4rem 3rem;
+    color: #200439;
+    margin: 4rem 3rem;
     padding: 0.5rem 2rem;
     text-align: center;
     border: 1px solid #9277AC;
@@ -105,40 +104,28 @@ Body {
     box-shadow: 10px 10px 5px #000;
 }
 
-
-
-.projectCard img{
-    width:100%;
+.projectCard img {
+    width: 100%;
     height: auto;
     border-radius: 3rem;
-    margin: 1rem 0;
+margin: 1rem 0;
 }
 
 .projectCard h2{
     margin: 0.5rem 1rem 1.5rem 1rem;
-    font-weight:600;
-}
-
-
-
-
-
-
-
-
-.projectCard p{
-    font-size: 1rem;
     font-weight: 400;
 }
 
-
+.projectCard p {
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 .projectIcons {
     display: flex;
     justify-content: space-evenly;
     font-size: 1.2rem;
     margin-top: 2rem;
-
 }
 
 .projectIcons p {
@@ -146,15 +133,12 @@ Body {
     font-size: 0.8rem;
 }
 
-
 .fa-github {
     font-size: 2.2rem;
     padding: 1.5rem;
-    
 }
 
-
-.fa-file { 
+.fa-file {
     font-size: 2.2rem;
     padding: 1.5rem;
 }
@@ -170,61 +154,49 @@ footer {
     margin: 1rem;
     padding: 1rem;
     font-size: 1rem;
-    color: #c5B358;
-    display:block;
+    color:#c5b358;
+    display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-.heroText {
-    font-size: 1rem;
-}
-
-.heroName { 
-    font-size: 3.5rem;
-}
-
-.button {
-    font-size: 1.1rem;
-}
-
-.projectGallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 
 .filler {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    height: 80vh;
 }
-
-
-
-
 
 
 
 @media (min-width: 800px) {
     .hero {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    }    
+    
+    .heroText{
+        font-size: 1rem;
+    }
+    
+    .heroName{
+        font-size: 3.5rem;
+    }
+    
+    .button {
+        font-size: 1.1rem;
+    }
+    
+    .projectGallery {
+        display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 90vh;
-    } }
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .projectCard {
+        max-width: 20%;
+    }
+}
